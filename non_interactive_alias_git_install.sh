@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Variables for easy modification
-REPO_URL="https://github.com/ForDefault/ez-navigator.git"
-SCRIPT_NAME="ez.sh"
-ALIAS_NAME="ez"
+REPO_URL="https:"
+SCRIPT_NAME="myscript.sh"
+ALIAS_NAME="myscript"
 
 # Extract repository name from the URL
 REPO_NAME=$(basename $REPO_URL .git)
