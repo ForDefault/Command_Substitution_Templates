@@ -18,14 +18,14 @@ cd $REPO_NAME && \
 # Get the full path to the cloned directory
 full_path=$(pwd) && \
 
-# Install necessary dependencies
-sudo apt-get update && sudo apt-get install -y xclip && \
+# Example to install necessary dependencies
+# sudo apt-get update && sudo apt-get install -y xclip && \
 
 # Make the script executable
 chmod +x "$SCRIPT_NAME" && \
 
-# Modify the script to use the current directory as needed
-sed -i 's|current_dir_tracker=$(pwd)|current_dir_tracker=$(pwd -P)|g' "$SCRIPT_NAME" && \
+# Example if need to modify the script to use the current directory
+# sed -i 's|current_dir_tracker=$(pwd)|current_dir_tracker=$(pwd -P)|g' "$SCRIPT_NAME" && \
 
 # Add the alias to .bashrc if it doesn't already exist
 if ! grep -q "alias $ALIAS_NAME=" ~/.bashrc; then \
